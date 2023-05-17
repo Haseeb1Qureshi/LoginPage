@@ -77,7 +77,6 @@ class _HomePageState extends State<HomePage>{
                 backgroundColor: Colors.red.shade900,
               ),
             ),
-
           ],
         ),
       ),
@@ -86,7 +85,7 @@ class _HomePageState extends State<HomePage>{
           child: new Text(style: TextStyle(fontSize: 20),"<= Swipe left to close the drawer"),
         ),
         semanticLabel: "Drawer",backgroundColor: Colors.blue.shade900,
-        ),
+      ),
     );
   }
 }
