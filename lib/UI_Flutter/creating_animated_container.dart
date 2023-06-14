@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:my_dummy_app/UI_Flutter/adding_images_and_creating_login_page.dart';
 import 'creating_button_with_alignment.dart';
 import 'routes.dart';
-import 'package:flutter_keyboard_visibility/flutter_keyboard_visibility.dart';
 
 void main(){
 
@@ -30,14 +29,6 @@ class Login_Page extends StatefulWidget {
 
 class _Login_PageState extends State<Login_Page> {
   @override
-
-  void showSnackBar(BuildContext context) {
-    final snackBar = SnackBar(
-      content: Text('Long press detected!'),
-      duration: Duration(seconds: 2),
-    );
-    ScaffoldMessenger.of(context).showSnackBar(snackBar);
-  }
 
   String name = "";
   bool changeButton = false;
@@ -138,7 +129,10 @@ class _Login_PageState extends State<Login_Page> {
 
                       child: InkWell(
                         borderRadius: BorderRadius.circular(30),
-                        onTap: () => moveToHome(context),
+                           onTap: () => moveToHome(context),
+                 //        onTap: () {
+                 //          moveToHome(context);    we can do this like this too;
+                 //        },
                         splashColor: Colors.blue.shade900,
 
                         child: AnimatedContainer(

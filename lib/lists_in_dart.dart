@@ -18,7 +18,7 @@ void main(){
   names.insertAll(2, listNumbers);  // here we are inserting the data we stored in "listNumbers". Now, we are printing this data in 2nd index of the list.
 
   //in order to update your data, we can do this;
-  // i spelled wrong of the above data, instead of writing faraz, i wrote rafaz mistakenly. so here's how i can fix this or update this:
+  // if spelled wrong of the above data, instead of writing faraz, i wrote rafaz mistakenly. so here's how i can fix this or update this:
 
   print(names);   //checking without update.
 
